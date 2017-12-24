@@ -13,11 +13,15 @@ h1{
 textarea{
   border: 0;
   text-align: left;
+  outline: 0;
   /*resize: none;*/
   color: white;
   background-color: #00216e;
   width:90%;
   font-size: 150%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 #title{

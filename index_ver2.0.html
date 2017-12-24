@@ -1,6 +1,8 @@
 <!--
-[index.html]
+[index_ver2.0.html]
+
 Copyright (c) [2017] [Mono-Alex]
+
 This software is released under the MIT License.
 http://opensource.org/licenses/mit-license.php
 -->
@@ -11,9 +13,11 @@ http://opensource.org/licenses/mit-license.php
 <head>
   <meta charset="UTF-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
   <script src="main.js"></script>
   <link rel="stylesheet" type="text/css" href="css/module.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/wrapper.css">
   <title>できたかどうかアンケート</title>
 </head>
 
@@ -35,15 +39,30 @@ http://opensource.org/licenses/mit-license.php
     </div>
   </div>
   <!-- ↑↑↑雪のアニメーション表示↑↑↑ -->
+    
+    
 
-  <footer>
+    <ul id="nav1">
+     
+      <li><a class="tab1" onClick="color1()"><span>Spring</span></a></li>
+      <li><a class="tab2" onClick="color2()"><span>Summer</span></a></li>
+      <li><a class="tab3" onClick="color3()"><span>Autumn</span></a></li>
+      <li><a class="tab4" onClick="color4()"><span>Winter</span></a></li>
+    
+    </ul>
+    <script>
+      
+
+      </script>
+
+  <!--footer>
     <p>N予備校で先生が使用している「できたかどうかアンケート（仮称）」アプリを自作してみて、改造してみました。地味に背景を冬仕様にしてます。
       <br> jquery/3.1.1を使用しています。
       <br> 初期状態に戻せます→
       <input type="button" id="clear" value="リセット">
     </p>
 
-  </footer>
+  </footer-->
 
 </body>
 

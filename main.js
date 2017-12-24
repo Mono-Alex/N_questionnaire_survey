@@ -71,3 +71,31 @@ $(function () {
     localStorage.setItem('Q4', $('#Q4').val());
   });
 });
+
+$(function () {
+  $('#nav1 li a').hover(
+    function () {
+      $(this).find('span').stop().animate({ 'marginRight': '175px' }, 500);
+    },
+    function () {
+      $(this).find('span').stop().animate({ 'marginRight': '0px' }, 300);
+    }
+  );
+});
+
+function color1() {
+  document.body.style.backgroundColor = "#FFCCFF";
+  document.getElementById("title").style.color = "#000080";
+}
+function color2() {
+  document.body.style.backgroundColor = "#8EF1FF";
+  document.getElementById("title").style.color = "#000080";
+}
+function color3() {
+  document.body.style.backgroundColor = "#FF773E";
+  document.getElementById("title").style.color = "#363636";
+}
+function color4() {
+  document.body.style.backgroundColor = "#b3aeae";
+  document.getElementById("title").style.color = "#363636";
+}
