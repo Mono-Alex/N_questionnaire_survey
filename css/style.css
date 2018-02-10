@@ -2,7 +2,7 @@ body{
   background-color: #b3aeae;
   margin-left:0px;margin-right:0px;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont,  "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
 }
 
 h1{
@@ -33,12 +33,4 @@ p{
   margin:  20px;
 }
 
-footer {
-  background-color: lightblue;
-  text-align: left;
-  width: 100%;
-  height: 150px;
-  position: fixed;
-  bottom: 0;
-}
 

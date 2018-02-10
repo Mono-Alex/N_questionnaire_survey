@@ -72,6 +72,92 @@ $(function () {
   });
 });
 
+//Ubuntu
+$(function () {
+  if (localStorage.getItem('title2')) {
+    $('#title2').val(localStorage.getItem('title2'));
+  }
+  $('#clear').click(function () {
+    $('#title2').val(' Q. Ubuntuコンソールを立ち上げていますか？');
+    localStorage.removeItem('title2');
+  });
+  $('#title2').bind('keyup', function () {
+    localStorage.setItem('title2', $('#title2').val());
+  });
+});
+
+$(function () {
+  if (localStorage.getItem('Q21')) {
+    $('#Q21').val(localStorage.getItem('Q21'));
+  }
+  $('#clear').click(function () {
+    $('#Q21').val(' 1. すでに立ち上げている');
+    localStorage.removeItem('Q21');
+  });
+  $('#Q21').bind('keyup', function () {
+    localStorage.setItem('Q21', $('#Q21').val());
+  });
+});
+
+$(function () {
+  if (localStorage.getItem('Q22')) {
+    $('#Q22').val(localStorage.getItem('Q22'));
+  }
+  $('#clear').click(function () {
+    $('#Q22').val(' 2. 立ち上げているところだ');
+    localStorage.removeItem('Q22');
+  });
+  $('#Q22').bind('keyup', function () {
+    localStorage.setItem('Q22', $('#Q22').val());
+  });
+});
+
+$(function () {
+  if (localStorage.getItem('Q23')) {
+    $('#Q23').val(localStorage.getItem('Q23'));
+  }
+  $('#clear').click(function () {
+    $('#Q23').val(' 3. インストール中');
+    localStorage.removeItem('Q23');
+  });
+  $('#Q23').bind('keyup', function () {
+    localStorage.setItem('Q23', $('#Q23').val());
+  });
+});
+
+$(function () {
+  if (localStorage.getItem('Q24')) {
+    $('#Q24').val(localStorage.getItem('Q24'));
+  }
+  $('#clear').click(function () {
+    $('#Q24').val(' 4. テキストのリンクからちょっとインストールしてくる');
+    localStorage.removeItem('Q24');
+  });
+  $('#Q24').bind('keyup', function () {
+    localStorage.setItem('Q24', $('#Q24').val());
+  });
+});
+
+$(function () {
+  if (localStorage.getItem('memo')) {
+    $('#memo').val(localStorage.getItem('memo'));
+  }
+  $('#clearMemo').click(function () {
+    $('#memo').val('');
+    localStorage.removeItem('memo');
+  });
+  $('#memo').bind('keyup', function () {
+    localStorage.setItem('memo', $('#memo').val());
+  });
+});
+
+
+
+
+
+
+
+/*
 $(function () {
   $('#nav1 li a').hover(
     function () {
@@ -99,3 +185,4 @@ function color4() {
   document.body.style.backgroundColor = "#b3aeae";
   document.getElementById("title").style.color = "#363636";
 }
+*/

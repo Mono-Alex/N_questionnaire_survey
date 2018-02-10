@@ -1,0 +1,130 @@
+<!--
+[index_ver2.1.html]
+
+Copyright (c) [2018] [Mono-Alex]
+
+This software is released under the MIT License.
+http://opensource.org/licenses/mit-license.php
+-->
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/module.css">
+  <link rel="stylesheet" type="text/css" href="css/style2.1.css">
+  <link rel="stylesheet" type="text/css" href="css/wrapper.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+  <title>できたかどうかアンケート（改）</title>
+</head>
+
+<body>
+
+  <div class="fullheight">
+    <h1>
+      <textarea id="title" name="textarea"> Q. 練習問題できましたか？</textarea>
+    </h1>
+    <h2>
+      <textarea id="Q1" name="textarea"> 1. できた</textarea>
+      <textarea id="Q2" name="textarea"> 2. もう少し時間が欲しい</textarea>
+      <textarea id="Q3" name="textarea"> 3. できない</textarea>
+      <textarea id="Q4" name="textarea"> 4. できる状況ではない</textarea>
+    </h2>
+  </div>
+
+
+  <div class="fullheight">
+    <h1 id="tab1">
+      <textarea id="title2" name="textarea"> Q. Ubuntuコンソールを立ち上げていますか？</textarea>
+    </h1>
+    <h2>
+      <textarea id="Q21" name="textarea"> 1. すでに立ち上げている</textarea>
+      <textarea id="Q22" name="textarea"> 2. 立ち上げているところだ</textarea>
+      <textarea id="Q23" name="textarea"> 3. インストール中</textarea>
+      <textarea id="Q24" name="textarea"> 4. テキストのリンクからちょっとインストールしてくる</textarea>
+    </h2>
+  </div>
+
+  <div class="fullheight">
+    <div id="tab2">
+      <h1 id="time"></h1>
+    </div>
+
+    <script>
+      time();
+      function time() {
+        var now = new Date();
+        document.getElementById("time").innerHTML = now.toLocaleTimeString();
+      }
+      setInterval('time()', 1000);
+    </script>
+    <video src="nc59377.mp4" autoplay loop>
+      <p>動画を再生するにはvideoタグをサポートしたブラウザが必要です。</p>
+    </video>
+    <div class="box1">
+      <p>本日紹介するITニュースのコーナー</p>
+    </div>
+  </div>
+
+  <div class="fullheight">
+    <h1 id="tab3">Tips</h1>
+    <textarea id="memo" name="textarea"> 今日のITニュース紹介とかコマンドメモ</textarea>
+    <input type="button" class="btn btn-danger" id="clearMemo" value="Tipsをリセット">
+  </div>
+
+  <div class="fullheight">
+    <h1 id="tab4">使い方</h1>
+    <h2>できたかどうかアンケート＆Ubuntu立ち上げましたか？</h2>
+    <div class="well well-sm">N予備校プログラミングコース受講者にアンケートを行うための先生側が使う表示ツールです。<br>
+      <input type="button" class="btn btn-danger" id="clear" value="できたかどうかアンケートとUbuntuアンケートをリセット"></div>
+    <h2>今日のITニュース</h2>
+    <div class="well well-sm">授業の最後に流すITニュースのコーナー、先生側が使うテロップツールです。お遊びで作りました。
+      <br> 素材はこちらからいただきました。http://commons.nicovideo.jp/material/nc59377
+      <br> まだまだ、未完成ですが・・・。使ってくれると嬉しい。
+    </div>
+    <h2>Tips</h2>
+    <div class="well well-sm">よく使うあんなコマンド、こんなコマンドをここにメモ書きするところです。
+      <br> 紹介するニュースをここに書き留める使い方もできます。
+    </div>
+  </div>
+
+  <!--ボトムナビ-->
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarEexample9">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          できたかどうかアンケート（改）
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarEexample9">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#tab1">Ubuntu立ち上げましたか？</a>
+          </li>
+          <li>
+            <a href="#tab2">今日のITニュース</a>
+          </li>
+          <li>
+            <a href="#tab3">Tips</a>
+          </li>
+          <li>
+            <a href="#tab4">使い方</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</body>
+
+</html>

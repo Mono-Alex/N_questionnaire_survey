@@ -2,7 +2,7 @@
 - N予備校の生放送で使用しているアンケートツールを勝手に作成して見ました。
 - 冬仕様にしています。
 - index.htmlはQitta記事用に作成。何かあったらすぐに消します。
-- index_ver2.0が最新バージョンです。
+- index_ver2.1が最新バージョンです。
 - OSS化してみましたMITライセンスです。
 - This software is released under the MIT License, see LICENSE.txt.
 
