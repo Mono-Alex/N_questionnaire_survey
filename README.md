@@ -9,7 +9,7 @@
 ---
 # できたかどうかアンケートについて
 
-![概要](https://github.com/Mono-Alex/N_questionnaire_survey/readmeimages/readme001.jpeg)
+![概要](https://github.com/Mono-Alex/N_questionnaire_survey/readmeImages/readme001.jpeg)
 
 1. 先生側　できたかどうかアンケート（ツール）に記入して、生徒側に放送画面で見せる。
 1. 生徒側　N予備校のアンケートの選択肢を選び、先生側に理解度を教える。
